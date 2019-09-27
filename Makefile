@@ -16,3 +16,6 @@ start:
 
 enter:
 	docker exec -it $(DOCKER_CONTAINER) /bin/bash
+
+develop_server:
+	python manage.py runserver 0.0.0.0:8000
